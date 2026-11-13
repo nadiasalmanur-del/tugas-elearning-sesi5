@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Nadia Salma Nurhidayah</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dceaff, #f4f8ff);
+            margin: 0;
+            padding: 40px 20px;
+            color: #444;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(65, 105, 160, 0.15);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #77a9ed, #426fae);
+            color: white;
+            font-size: 38px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            box-shadow: 0 5px 15px rgba(65, 105, 160, 0.2);
+        }
+
+        h1 {
+            color: #315b91;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #8294aa;
+            font-size: 14px;
+        }
+
+        h2 {
+            color: #426fae;
+            font-size: 21px;
+            margin-top: 28px;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+            color: #5c6572;
+            font-size: 15px;
+        }
+
+        .clock-box {
+            background: linear-gradient(135deg, #edf4ff, #e0ecff);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0 20px;
+        }
+
+        #jam {
+            font-size: 36px;
+            font-weight: bold;
+            color: #315b91;
+            margin-top: 15px;
+        }
+
+        #tanggal {
+            color: #71849d;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            background: #477fbd;
+            color: white;
+            border: none;
+            padding: 13px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #315b91;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 12px rgba(65, 105, 160, 0.2);
+        }
+
+        #pesan {
+            color: #315b91;
+            font-weight: bold;
+            margin-top: 18px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            color: #9aa9ba;
+            font-size: 13px;
+            margin-top: 35px;
+            border-top: 1px solid #e8eef7;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- PROFIL -->
+        <div class="profile">
+            <div class="avatar">N</div>
+
+            <h1>Nadia Salma Nurhidayah</h1>
+
+            <div class="subtitle">
+                Mahasiswa | Teknologi dan Kreativitas
+            </div>
+        </div>
+
+        <!-- TENTANG SAYA -->
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Halo! Perkenalkan, nama saya Nadia Salma Nurhidayah.
+            Saya merupakan seorang mahasiswa yang sedang menempuh
+            pendidikan di Universitas Teknologi Bandung. Saya memiliki ketertarikan
+            untuk terus belajar dan mengembangkan kemampuan, khususnya
+            dalam bidang teknologi informasi dan komputer.
+        </p>
+
+        <p>
+            Selain tertarik dengan dunia teknologi, saya juga memiliki
+            hobi di bidang seni dan kerajinan tangan. Saya senang
+            membuat berbagai kerajinan kreatif, salah satunya kerajinan
+            dari tanah liat yang dapat dibentuk menjadi berbagai macam
+            karya unik dan menarik.
+        </p>
+
+        <p>
+            Saya juga memiliki bisnis kecil di bidang kerajinan
+            manik-manik. Produk yang saya buat antara lain gelang,
+            cincin, dan kalung dengan berbagai kombinasi warna dan
+            desain. Melalui kegiatan ini, saya belajar tentang
+            kreativitas, ketelitian, serta bagaimana mengembangkan
+            sebuah usaha.
+        </p>
+
+        <p>
+            Bagi saya, teknologi dan kreativitas merupakan dua hal
+            yang dapat berjalan berdampingan. Saya berharap dapat
+            terus mengembangkan kemampuan di bidang teknologi maupun
+            seni, serta menjadikan hobi dan usaha yang saya jalankan
+            sebagai pengalaman berharga untuk masa depan.
+        </p>
+
+        <!-- JAM DAN TANGGAL -->
+        <div class="clock-box">
+
+            <h2>Jam dan Tanggal Sekarang</h2>
+
+            <div id="jam">00:00:00</div>
+
+            <div id="tanggal">
+                Memuat tanggal...
+            </div>
+
+            <button onclick="tampilkanWaktu()">
+                Perbarui Jam & Tanggal
+            </button>
+
+        </div>
+
+        <!-- TOMBOL SAPAAN -->
+        <div style="text-align:center;">
+
+            <button onclick="sapaPengunjung()">
+                Klik untuk Sapaan!
+            </button>
+
+            <div id="pesan"></div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            © 2026 | Website Profil Mahasiswa
+            <br>
+            Dibuat dengan HTML, CSS, dan JavaScript
+        </div>
+
+    </div>
+
+    <script>
+
+        // FUNGSI JAM DAN TANGGAL
+        function tampilkanWaktu() {
+
+            const sekarang = new Date();
+
+            const jam = sekarang.toLocaleTimeString('id-ID', {
+                hour12: false
+            });
+
+            const tanggal = sekarang.toLocaleDateString('id-ID', {
+                weekday: 'long',
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+
+            document.getElementById("jam").innerHTML = jam;
+
+            document.getElementById("tanggal").innerHTML = tanggal;
+        }
+
+        // FUNGSI TOMBOL SAPAAN
+        function sapaPengunjung() {
+
+            document.getElementById("pesan").innerHTML =
+                "Halo! Selamat datang di website profil saya! Semoga harimu menyenangkan!";
+
+        }
+
+        // MENJALANKAN JAM OTOMATIS
+        tampilkanWaktu();
+
+        setInterval(tampilkanWaktu, 1000);
+
+    </script>
+
+</body>
+</html>
