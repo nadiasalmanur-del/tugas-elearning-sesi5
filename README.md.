@@ -1,27 +1,34 @@
 
 # Tugas 1 - Elearning Sesi 5
+
 ## Website Profil Mahasiswa
 
-**Nama:** Nadia Salma Nurhidayah  
-**NIM:** 24552011044  
+**Nama:** Nadia Salma Nurhidayah
+
+**NIM:** 24552011044
+
 **Mata Kuliah:** Sistem Mikroprosesor
 
-### Deskripsi
-Website profil mahasiswa dibuat menggunakan HTML, CSS, dan JavaScript.
+### Deskripsi Website
 
-Website ini memiliki beberapa fitur:
-- Profil dan deskripsi diri.
-- Informasi hobi kerajinan tangan.
-- Informasi bisnis kerajinan manik-manik.
-- Jam digital otomatis.
-- Tanggal otomatis.
-- Tombol interaktif.
+Website ini dibuat menggunakan HTML, CSS, dan JavaScript sebagai tugas Elearning Sesi 5.
+
+Website ini berisi profil pribadi, informasi pendidikan, hobi, dan bisnis kerajinan tangan.
+
+### Fitur Website
+- Profil mahasiswa
+- Informasi hobi kerajinan tanah liat
+- Informasi bisnis manik-manik seperti gelang, cincin, dan kalung
+- Jam digital otomatis
+- Tanggal otomatis
+- Tombol interaktif
 
 ### Screenshot Tampilan Website
 
-![Tampilan Website Profil Mahasiswa](screenshot1.png)
+![Tampilan Website 1](screenshot1.png)
 
-![Tampilan Website Profil Mahasiswa](screenshot2.png)
+![Tampilan Website 2](screenshot2.png)
 
 ### Link Website
+
 https://nadiasalmanur-del.github.io/tugas-elearning-sesi5/
